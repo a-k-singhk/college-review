@@ -1,0 +1,1 @@
+ path('', views.home, name='home')

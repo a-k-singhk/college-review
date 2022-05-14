@@ -1,0 +1,233 @@
+{% extends 'base.html' %} {% block title %} Home {% endblock title %} {% block homeactive %} active {% endblock homeactive %} {% block body %}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #29769d;
+            color: white;
+        }
+        
+        .container {
+            padding: 0 16px;
+        }
+        
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .title {
+            color: grey;
+        }
+        
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="about-section">
+        <h1>Home</h1>
+        <p>College Review</p>
+        <p>We provide information about various Engineering Colleges</p>
+    </div>
+
+
+</body>
+<html>
+<div class="container">
+    <div class="jumbotron my-3">
+        <h1 class="display-4">Welcome to College Review</h1>
+        <p class="lead">College Review provide you details of various Engineering Colleges across India</p>
+        <hr class="my-4">
+        <p>We will try to give you a clear information of various Engineering Colleges</p>
+        <a class="btn btn-primary btn-lg" href="/blog" role="button">Go to Blog</a>
+    </div>
+</div>
+<div class="container">
+    <h2>Popular Blogposts:</h2>
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 my-4 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">College Review</strong>
+            <h3 class="mb-0">Featured post</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn btn-primary btn-lg" href="/blog" role="button">Go to Blog</a>
+        </div>
+    </div>
+    <html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html {
+                box-sizing: border-box;
+            }
+            
+            *,
+            *:before,
+            *:after {
+                box-sizing: inherit;
+            }
+            
+            .column {
+                float: left;
+                width: 33.3%;
+                margin-bottom: 16px;
+                padding: 0 8px;
+            }
+            
+            @media screen and (max-width: 650px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                margin: 10px;
+            }
+            
+            .container {
+                padding: 0 16px;
+            }
+            
+            .container::after,
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            
+            .title {
+                color: grey;
+            }
+            
+            .button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: rgb(250, 18, 10);
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+            }
+            
+            .button:hover {
+                background-color: #555;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h2>Top Engineering Colleges</h2>
+        <p>Dream Colleges of Engineering Students</p>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="/static/img/IIT-Madras.webp" alt="Jane" style="width:100%">
+                    <div class="container">
+                        <h2>IIT-Madras</h2>
+                        <p class="title">Indian Institute of Technology</p>
+                        <a href="/blog/Third-Post">
+                            <p><button class="button">Open Blog</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="/static/img/IIT-Bombay.webp" alt="Mike" style="width:100%">
+                    <div class="container">
+                        <h2>IIT-Bombay</h2>
+                        <p class="title">Indian Institute of Technology</p>
+                        <a href="/blog/second-post">
+                            <p><button class="button">Open Blog</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="/static/img/IIT-Kharagpur (1).webp" alt="John" style="width:100%">
+                    <div class="container">
+                        <h2>IIT-Kharagpur</h2>
+                        <p class="title">Indian Institute of Technology</p>
+                        <a href="/blog/First-Post">
+                            <p><button class="button">Open Blog</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: rgb(117, 9, 93);
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h2></h2><br>
+        <p></p><br>
+
+        <div class="footer">
+            <h3>College Pravesh © Copyright 2021</h3>
+        </div>
+
+    </body>
+
+</html>
+{% endblock body %}
